@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(https://i.pinimg.com/736x/80/d3/0b/80d30b73a3a6de022c203a281555998a.jpg);
+  overflow-x: hidden;
+}
+
+.app {
+  text-align: center;
+  padding: 8rem;
+}
+
+.title {
+  color: #f44336;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filters input,
+.filters select {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 180px); 
+  gap: 70px; 
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card {
+  background: white;
+  border: solid red;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 180px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+}
+
+.card .number {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.types {
+  margin-top: 0.5rem;
+}
+
+.type {
+  display: inline-block;
+  background-color: black;
+  border-radius: 10px;
+  padding: 0.2rem 0.6rem;
+  margin: 0.2rem;
+  font-size: 0.8rem;
+}
+
+
+@media (max-width: 950px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
