@@ -80,6 +80,12 @@ body {
   margin: 0.2rem;
   font-size: 0.8rem;
 }
+.number {
+  font-weight: bold;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
 
 @media (max-width: 950px) {
   .card-container {
