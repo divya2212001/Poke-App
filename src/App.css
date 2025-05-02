@@ -34,7 +34,6 @@ body {
   color: white;
 }
 
-
 .card-container {
   display: grid;
   grid-template-columns: repeat(5, 180px); 
@@ -82,9 +81,55 @@ body {
   font-size: 0.8rem;
 }
 
-
 @media (max-width: 950px) {
   .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 30px; 
+  }
+
+  .title {
+    font-size: 2rem; 
+  }
+
+  .filters {
+    flex-direction: column; 
+    gap: 0.5rem;
+  }
+
+  .filters input,
+  .filters select {
+    width: 100%; 
+  }
+
+  .card {
+    width: 150px; 
+    padding: 0.8rem; 
+  }
+
+  .card img {
+    width: 60px; 
+    height: 60px;
+  }
+
+  .card .number {
+    font-size: 1rem; 
+  }
+
+  .type {
+    font-size: 0.7rem; 
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 4rem; 
+  }
+
+  .filters {
+    gap: 0.2rem;
+  }
+
+  .title {
+    font-size: 1.8rem; 
   }
 }
